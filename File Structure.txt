@@ -1,0 +1,20 @@
+File Structure
+
+main.m - Main module of the implementation.
+
+construct_frames.m - Construct RGB frames from the video and get their Y, U, V components. Save them in the mentioned location.
+
+embed_message.m - Applying (7, 4) Hamming Code to the message and embed the same into the scrambled Y, U, V frames.
+
+combine_frames.m - Combine the embedded Y, U, V frames into their embedded RGB frame.
+
+frames_to_video.m - Construct the video from the embedded RGB frames.
+
+receiver_retrieve.m - From the constructed video after embedding, it will retrieve the message back after applying Hamming correction.
+
+scramble.m - Scrambles all the Y, U, V frames given their directory based on a key.
+
+unscramble.m - Unscrambles all the Y, U, V frames given their directory based on a key.
+
+yuv2rgb.m - Converts Y, U, V components into a single RGB frame.
+

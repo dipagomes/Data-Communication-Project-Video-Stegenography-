@@ -1,0 +1,20 @@
+Usage
+Specify the video to be used in the files: main.m, frames_to_video.m and receiver_retrieve.m
+
+Specify the key to be used in the file main.m
+
+Run the following files in order
+
+main.m : In the frames directory the following would be present
+
+framesRGB : RGB frames of the video small.mp4 or large.mp4
+framesY : srambled Y components for RGB frames
+framesU : srambled U components for RGB frames
+framesV : srambled V components for RGB frames
+embed_message.m : The binary image message.png will be embedded into the scrambled Y, U, V components.
+
+combine_frames.m : In the directory frames\embeddedFramesRGB, the embedded RGB frames will be created.
+
+frames_to_video.m : Video named em_small.avi will be created from the embedded RGB frames.
+
+receiver_retrieve.m : From the video em_small.avi the message will be constructed back and displayed..
